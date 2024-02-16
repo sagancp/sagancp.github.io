@@ -1,8 +1,12 @@
-/** @type {import('next').NextConfig} */
+/**
+* @type {import('next').NextConfig}
+*/
 const nextConfig = {
-  reactStrictMode: true,
-  transpilePackages: ['@mui/x-charts'],
- 
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
+  assetPrefix: './',
 };
 
 export default nextConfig;
