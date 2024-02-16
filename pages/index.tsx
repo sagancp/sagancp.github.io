@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 
-export async function getGoogleSheetsData(range: string) {
+async function getGoogleSheetsData(range: string) {
   const apiKey = 'AIzaSyAPYf2hp4fgLj5fXbY6G8w00m1_qgxoqNE';
   const spreadsheetId = '1_NM0doJX5qSx0Hp9RbUlCx4uX22IlTmUP5iWw2NGpc4';
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}?key=${apiKey}`;
